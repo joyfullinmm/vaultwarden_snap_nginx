@@ -1,0 +1,7 @@
+While most tutorials of vaultwarden password manager installation suggest the docker way, which is cool indeed. Yet, there is another way, perhaps cooler way.
+On an Ubuntu-based OS, snapd comes in stock. So do the following command to install vaultwarden password manager:
+sudo snap install vaultwarden
+The instance of vaultwarden is now listening on port 8000 of the localhost.
+Next, use nginx reverse proxy to present your vaultwarden to the outside world.
+It may mean adding a proxy_pass line to your nginx configuration file, or setting up a new reverse proxy site through your control panel.
+If things go well, the whole process takes less than 2 minutes.
